@@ -1,0 +1,46 @@
+.semestr {
+  background-color: #FFD700; 
+  border: 1px solid #ccc; 
+  border-radius: 10px;
+  padding: 10px; 
+  margin: 20px auto; 
+  width: 90%; 
+  max-width: 200px; 
+  text-align: center; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+h3 {
+  font-family: 'UI Sans Serif', sans-serif; 
+  font-size: 16px; 
+  margin: 0; 
+  color: #333; 
+}
+
+.semestr:hover {
+  background-color: #d7bc20; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+@media (max-width: 600px) {
+  .semestr {
+    font-size: 14px; 
+    padding: 8px; 
+  }
+
+  h3 {
+    font-size: 14px; 
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .semestr {
+    font-size: 15px; 
+    padding: 10px; 
+  }
+
+  h3 {
+    font-size: 15px; 
+  }
+}
