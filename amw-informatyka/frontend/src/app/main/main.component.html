@@ -1,0 +1,46 @@
+<div class="main-header">
+  <a href="https://www.wme.amw.gdynia.pl/">
+    <img src="../../../assets/wme-logo2-2.png" alt="Logo WME" class="logo" />
+  </a>
+</div>
+
+<div class="header">
+  <div class="header-title">
+    <div class="header-buttons">
+      <button class="btn save-button">
+        <i class="fas fa-download"></i> Pobierz
+      </button>
+      <div class="dropdown">
+        <button class="btn share-button" (click)="toggleDropdown()">
+          <i class="fas fa-share-alt"></i> Udostępnij
+        </button>
+        <div class="dropdown-content" [ngClass]="{'show': dropdownOpen}">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+          </a>
+          <a href="mailto:?subject=Check this out!&body=Check out this link: YOUR_URL">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+          <a href="javascript:void(0);" (click)="copyLink()">
+            <i class="fas fa-link"></i> Skopiuj link
+          </a>
+        </div>
+      </div>
+    </div>
+    <h1>Informatyka</h1>
+    <h2>Roadmapa studiów na Akademii Marynarki Wojennej</h2>
+  </div>
+</div>
+
+<div class="roadmap">
+  <div class="semesters-container">
+    <app-semester semestrNumber="1"></app-semester>
+    <app-semester semestrNumber="1"></app-semester>
+    <app-semester semestrNumber="1"></app-semester>
+  </div>
+  <div class="courses-container">
+    <!-- <app-course></app-course>
+    <app-course></app-course>
+    <app-course></app-course> -->
+  </div>
+</div>
