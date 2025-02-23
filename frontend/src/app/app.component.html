@@ -1,0 +1,45 @@
+<div class="container">
+  <!-- Modal -->
+  <div class="modal">
+    <div class="header">
+      <!-- Logo -->
+      <img src="./logo.png" alt="Logo" class="logo" />
+      <!-- Nagłówki -->
+      <div class="titles">
+        <h1>Informatyka AMW</h1>
+        <h2>Roadmapa Studiów</h2>
+      </div>
+    </div>
+
+    <!-- Wybór semestru -->
+    <div class="semester-selection">
+      <div 
+        *ngFor="let semester of semesters; let i = index" 
+        class="semester-label" 
+        [class.selected]="selectedSemester === i" 
+        (click)="onSemesterClick(i)"
+        (mouseenter)="onMouseEnter(i)" 
+        (mouseleave)="onMouseLeave()"
+      >
+        <span class="semester-title">Semestr {{ i + 1 }}</span>
+      </div>
+    </div>
+  </div>
+
+<!-- src/app/app.component.html -->
+<div class="semester-selected" *ngIf="selectedSemester !== null">
+  Semestr {{ selectedSemester + 1 }}
+</div>
+
+<!-- Wyświetlanie modułów i przedmiotów w wybranym semestrze -->
+<app-timeline 
+*ngIf="selectedSemester !== null && getModulesForSemester(selectedSemester).length > 0"
+[modules]="getModulesForSemester(selectedSemester)"
+(selectSubject)="onSubjectSelected($event)"
+>
+</app-timeline>
+
+
+  <!-- Wyświetlanie szczegółów przedmiotu -->
+  <app-subject-details *ngIf="selectedSubject" [subject]="selectedSubject"></app-subject-details>
+</div>
