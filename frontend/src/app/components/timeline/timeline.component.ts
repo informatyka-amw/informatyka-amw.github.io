@@ -35,9 +35,9 @@ export class TimelineComponent implements AfterViewInit, OnChanges {
 
     ngOnChanges() {
         setTimeout(() => {
-            this.clearConnections(); // Najpierw usuń istniejące linie
-            this.createConnections(); // Następnie spróbuj narysować nowe linie
-            this.onScroll();  // Sprawdź widoczność modułów/przedmiotów w mobilnym widoku
+            this.clearConnections(); 
+            this.createConnections(); 
+            this.onScroll();  
         }, 500);
     }
 

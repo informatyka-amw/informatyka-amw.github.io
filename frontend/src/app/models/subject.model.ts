@@ -1,9 +1,9 @@
 export interface Subject {
   name: string;
   description?: string;
-  lecturer?: string; // Zmienione z instructor na lecturer zgodnie z YAML
+  lecturer?: string; 
   ects?: number;
-  exam_type?: 'exam' | 'pass'; // Zmieniona nazwa examType → exam_type
+  exam_type?: 'exam' | 'pass'; 
   contact_hours?: {
     lecture?: number;
     exercises?: number;

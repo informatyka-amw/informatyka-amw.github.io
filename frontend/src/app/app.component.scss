@@ -1,42 +1,36 @@
-/* Kontener dla centrowania */
 .container {
   display: flex;
-  flex-direction: column; /* Ustawienie elementów w kolumnie */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px; /* Dodatkowy odstęp od góry */
+  padding-top: 50px;
 }
 
-/* Modal */
-/* Kontener dla modala */
 .modal {
   background: white;
   padding: 20px;
   border-radius: 12px;
   border: 1px solid #d3d3d3;
-  width: 800px; /* SZERSZY */
-  min-height: 200px; /* WĘŻSZY */
+  width: 800px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Rozciąga elementy */
+  justify-content: space-between;
   box-shadow: 0px 2px 12px 0px rgba(18, 18, 19, 0.0588);
 }
 
-/* Kontener dla logo i nagłówków */
 .header {
   display: flex;
-  align-items: center; /* Wyrównuje logo i tekst na tej samej wysokości */
+  align-items: center;
 }
 
-/* Logo */
 .logo {
-  height: 100%; /* Dopasowanie do wysokości tekstu */
-  width: auto; /* Zachowuje proporcje */
-  max-height: 70px; /* Możesz dostosować max-height, jeśli chcesz, żeby logo miało ograniczoną wysokość */
-  margin-right: 15px; /* Odstęp między logo a tekstem */
+  height: 100%;
+  width: auto;
+  max-height: 70px;
+  margin-right: 15px;
 }
 
-/* Nagłówki */
 .titles {
   display: flex;
   flex-direction: column;
@@ -57,17 +51,14 @@
   text-align: left;
 }
 
-
-/* Sekcja semestrów - PRZESUNIĘCIE NIŻEJ */
 .semester-selection {
   display: flex;
   justify-content: space-between;
-  margin-top: auto; /* Wypycha sekcję na dół */
-  padding-bottom: 0; /* Usuwa marginesy na dole */
+  margin-top: auto;
+  padding-bottom: 0;
   gap: 1px;
 }
 
-/* Styl przycisku semestru */
 .semester-label {
   flex: 1;
   text-align: center;
@@ -76,14 +67,12 @@
   font-size: 18px;
   font-weight: 500;
   position: relative;
-  transition: color 0.3s; /* Płynna zmiana koloru tekstu */
+  transition: color 0.3s;
 }
 
-/* Podkreślenie semestru */
-/* Styl przycisku semestru */
 .semester-label {
-  flex: 0 0 auto; /* Elementy o stałej szerokości */
-  width: 100px; /* Stała szerokość przycisków semestrów */
+  flex: 0 0 auto;
+  width: 100px;
   padding:  0;
   font-size: 16px;
   text-align: center;
@@ -91,44 +80,40 @@
   font-weight: 500;
   position: relative;
   transition: color 0.3s;
-  color: #343434
+  color: #343434;
 }
 
-/* Podkreślenie semestru */
 .semester-label::after {
   content: "";
   position: absolute;
-  bottom: -20px; /* Pozycja podkreślenia */
-  left: 50%; /* Ustawienie na środek */
-  width: 0%; /* Początkowa szerokość 0% */
+  bottom: -20px;
+  left: 50%;
+  width: 0%;
   height: 3px;
-  background-color: transparent; /* Początkowy kolor przezroczysty */
-  transform: translateX(-50%); /* Przesunięcie o 50% w lewo, aby zaczynało się w środku */
-  transform-origin: center center; /* Ustawienie punktu transformacji na środek */
-  transition: width 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Animacja na szerokość, kolor oraz transformację */
+  background-color: transparent;
+  transform: translateX(-50%);
+  transform-origin: center center;
+  transition: width 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Aktywny semestr */
 .semester-label.selected::after {
-  width: 100%; /* Pełna szerokość podkreślenia dla aktywnego semestru */
-  background-color: #4682b4; /* Kolor podkreślenia dla aktywnego semestru */
-  transform: translateX(-50%) scaleX(1); /* Skaluje podkreślenie z centrum */
+  width: 100%;
+  background-color: #4682b4;
+  transform: translateX(-50%) scaleX(1);
 }
 
-/* Efekt hover */
 .semester-label:hover::after {
-  width: 100%; /* Podkreślenie na 100% przy najechaniu */
-  background-color: #4682b4; /* Kolor podkreślenia przy najechaniu */
-  transform: translateX(-50%) scaleX(1); /* Skaluje podkreślenie z centrum przy hover */
+  width: 100%;
+  background-color: #4682b4;
+  transform: translateX(-50%) scaleX(1);
 }
 
 .semester-label:hover {
-  color: #4682b4; /* Zmiana koloru tekstu na hover */
+  color: #4682b4;
 }
 
-/* Zmiana koloru tekstu dla aktywnego semestru */
 .semester-label.selected {
-  color: #4682b4; /* Kolor tekstu dla wybranego semestru */
+  color: #4682b4;
 }
 
 .semester-selected {
@@ -140,8 +125,6 @@
   margin-bottom: 20px;
 }
 
-
-/* 🔹 RESPONSYWNOŚĆ 🔹 */
 @media (max-width: 600px) {
   .modal {
     width: 95%;
@@ -151,29 +134,28 @@
   }
 
   .header {
-    flex-direction: column; /* Na małych ekranach układ pionowy */
-    align-items: center; /* Wyrównanie w poziomie */
+    flex-direction: column;
+    align-items: center;
   }
 
   .logo {
-    height: 30px; /* Mniejsze logo na mniejszych ekranach */
+    height: 30px;
   }
 
   .titles {
-    align-items: center; /* Wyrównanie tekstów do środka */
+    align-items: center;
   }
 
   .semester-selection {
     display: flex;
-    flex-direction: row; /* Poziome rozmieszczenie semestrów */
-    overflow-x: auto; /* Przewijanie poziome */
-    gap: 10px; /* Odstępy między semestrami */
-    padding-bottom: 10px; /* Drobny margines na dole */
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 10px;
   }
 
   .semester-label {
-    flex: 0 0 auto; /* Elementy o stałej szerokości */
-    width: 100px; /* Stała szerokość przycisków semestrów */
+    flex: 0 0 auto;
+    width: 100px;
     padding: 10px 0;
     font-size: 16px;
     text-align: center;
@@ -184,187 +166,6 @@
   }
 
   .semester-label::after {
-    bottom: -4px; 
+    bottom: -4px;
   }
 }
-
-
-
-
-
-
-////////
-/* Kontener dla centrowania */
-// .container {
-//   display: flex;
-//   flex-direction: column; /* Ustawienie elementów w kolumnie */
-//   justify-content: center;
-//   align-items: center;
-//   padding-top: 50px; /* Dodatkowy odstęp od góry */
-// }
-
-// /* Modal */
-// .modal {
-//   background: #161b22;
-//   padding: 20px;
-//   border-radius: 12px;
-//   border: 1px solid linear-gradient(45deg, #0d47a1, #1976d2, #0d47a1) 1;;
-//   // border-image: linear-gradient(45deg, #0d47a1, #1976d2, #0d47a1) 1;
-//   width: 800px; /* SZERSZY */
-//   min-height: 200px; /* WĘŻSZY */
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between; /* Rozciąga elementy */
-//   box-shadow: 0px 2px 12px 0px rgba(18, 18, 19, 0.0588); 
-// }
-
-// /* Nagłówki wewnątrz modala */
-// .modal h1 {
-//   text-align: left; /* Wyrównanie do lewej */
-//   margin: 5px 0 ;
-//   font-size: 26px;
-//   color: white
-// }
-
-// .modal h2 {
-//   text-align: left; /* Wyrównanie do lewej */
-//   margin: 8px 0 15px 0; /* Odstęp między tytułem a semestrami */
-//   font-size: 18px;
-//   color: white; /* Szary kolor */
-//   font-weight: normal;
-// }
-
-// /* Sekcja semestrów - PRZESUNIĘCIE NIŻEJ */
-// .semester-selection {
-//   display: flex;
-//   justify-content: space-between;
-//   margin-top: auto; /* Wypycha sekcję na dół */
-//   padding-bottom: 0; /* Usuwa marginesy na dole */
-//   gap: 1px;
-// }
-
-// /* Styl przycisku semestru */
-// .semester-label {
-//   flex: 1;
-//   text-align: center;
-//   padding: 2px 0;
-//   cursor: pointer;
-//   font-size: 18px;
-//   font-weight: 500;
-//   position: relative;
-//   transition: color 0.3s; /* Płynna zmiana koloru tekstu */
-// }
-
-// /* Podkreślenie semestru */
-// /* Styl przycisku semestru */
-// .semester-label {
-//   flex: 0 0 auto; /* Elementy o stałej szerokości */
-//   width: 100px; /* Stała szerokość przycisków semestrów */
-//   padding:  0;
-//   font-size: 16px;
-//   text-align: center;
-//   cursor: pointer;
-//   font-weight: 500;
-//   position: relative;
-//   transition: color 0.3s;
-//   color: white
-// }
-
-// /* Podkreślenie semestru */
-// .semester-label::after {
-//   content: "";
-//   position: absolute;
-//   bottom: -20px; /* Pozycja podkreślenia */
-//   left: 50%; /* Ustawienie na środek */
-//   width: 0%; /* Początkowa szerokość 0% */
-//   height: 3px;
-//   background-color: transparent; /* Początkowy kolor przezroczysty */
-//   transform: translateX(-50%); /* Przesunięcie o 50% w lewo, aby zaczynało się w środku */
-//   transform-origin: center center; /* Ustawienie punktu transformacji na środek */
-//   transition: width 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Animacja na szerokość, kolor oraz transformację */
-// }
-
-// /* Aktywny semestr */
-// .semester-label.selected::after {
-//   width: 100%; /* Pełna szerokość podkreślenia dla aktywnego semestru */
-//   background-color: #004176; /* Kolor podkreślenia dla aktywnego semestru */
-//   transform: translateX(-50%) scaleX(1); /* Skaluje podkreślenie z centrum */
-// }
-
-// /* Efekt hover */
-// .semester-label:hover::after {
-//   width: 100%; /* Podkreślenie na 100% przy najechaniu */
-//   background-color: #4682b4; /* Kolor podkreślenia przy najechaniu */
-//   transform: translateX(-50%) scaleX(1); /* Skaluje podkreślenie z centrum przy hover */
-// }
-
-// .semester-label:hover {
-//   color: #4682b4; /* Zmiana koloru tekstu na hover */
-// }
-
-// /* Zmiana koloru tekstu dla aktywnego semestru */
-// .semester-label.selected {
-//   color: #4682b4; /* Kolor tekstu dla wybranego semestru */
-// }
-
-// .semester-selected {
-//   text-align: center;
-//   font-size: 20px;
-//   font-weight: 600;
-//   color: #4682b4;
-//   margin-top: 20px;
-//   margin-bottom: 20px;
-// }
-
-
-// /* 🔹 RESPONSYWNOŚĆ 🔹 */
-// @media (max-width: 600px) {
-//   .modal {
-//     width:95%; /* Jeszcze bardziej kompaktowe */
-//     min-height: auto; /* Elastyczna wysokość */
-//     padding: 15px; /* Mniejsze paddingi */
-//     max-width: 250px;
-//   }
-
-//   .modal h1 {
-//     font-size: 22px; /* Mniejszy nagłówek */
-//   }
-
-//   .modal h2 {
-//     font-size: 14px; /* Mniejsza czcionka */
-//   }
-
-//   .semester-selection {
-//     display: flex;
-//     flex-direction: row; /* Poziome rozmieszczenie semestrów */
-//     overflow-x: auto; /* Przewijanie poziome */
-//     gap: 10px; /* Odstępy między semestrami */
-//     padding-bottom: 10px; /* Drobny margines na dole */
-//   }
-
-//   .semester-label {
-//     flex: 0 0 auto; /* Elementy o stałej szerokości */
-//     width: 100px; /* Stała szerokość przycisków semestrów */
-//     padding: 10px 0;
-//     font-size: 16px;
-//     text-align: center;
-//     cursor: pointer;
-//     font-weight: 500;
-//     position: relative;
-//     transition: color 0.3s;
-//   }
-
-//   .semester-label::after {
-//     bottom: -4px; 
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
