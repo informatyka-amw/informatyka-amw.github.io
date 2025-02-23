@@ -60,6 +60,67 @@
   transform: scale(1.1); 
 }
 
+.subject-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #4682b4;
+  padding-bottom: 5px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3, .section p {
+  font-size: 16px;
+  color: #333;
+}
+
+.suma_godzin {
+  font-size: 14px !important; 
+  color: #777 !important; 
+  margin-top: 15px !important;
+  font-weight: normal !important;
+}
+
+
+
+.contact-hours ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-hours li {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.files ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.files li {
+  margin: 5px 0;
+}
+
+.files a {
+  text-decoration: none;
+  color: #4682b4;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.files i {
+  margin-right: 10px;
+}
+
+.files a:hover {
+  color: #006994;
+}
+
 
 @media (min-width: 769px) {
   .sidebar {
@@ -83,6 +144,32 @@
 }
 
 
-body.modal-open {
-  overflow: hidden;
+.contact-hour-card, .non-contact-hour-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  align-items: center;
 }
+
+.contact-hour-label, .non-contact-hour-label {
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+
+.contact-hour-value, .non-contact-hour-value {
+  color: #4682b4;
+}
+
+
+/* Ikony w kartach */
+.contact-hour-card i, .non-contact-hour-card i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #4682b4;
+}
+

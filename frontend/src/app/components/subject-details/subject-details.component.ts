@@ -21,6 +21,20 @@ export class SubjectDetailsComponent implements OnChanges {
 
   }
 
+  getTotalContactHours(): number {
+    if (!this.subject || !this.subject.contact_hours) {
+      return 0; 
+    }
+
+    const { contact_hours } = this.subject;
+    const lecture = contact_hours?.lecture || 0;
+    const exercises = contact_hours?.exercises || 0;
+    const labs = contact_hours?.labs || 0;
+    const seminars = contact_hours?.seminars || 0;
+    
+    return lecture + exercises + labs + seminars;
+  }
+
   closeSidebar() {
     this.subject = null;
   }
