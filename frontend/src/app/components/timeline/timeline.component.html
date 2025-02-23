@@ -1,0 +1,23 @@
+<div class="timeline-container">
+  <div class="vertical-timeline" #timelineContainer>
+    <div class="timeline-line"></div>
+
+    <div *ngFor="let module of modules; let i = index" class="timeline-item">
+      <!-- Moduł na środku -->
+      <div class="timeline-label" [id]="'module-' + i">
+        {{ module.name }}
+      </div>
+
+      <!-- Przedmioty - raz po lewej, raz po prawej -->
+      <div class="subjects-wrapper" [ngClass]="i % 2 === 0 ? 'subjects-right' : 'subjects-left'">
+        <div *ngFor="let subject of module.subjects; let j = index" 
+             class="subject" 
+             [id]="'subject-' + i + '-' + j"
+            (click)="onSubjectClick(subject)"> 
+          {{ subject.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

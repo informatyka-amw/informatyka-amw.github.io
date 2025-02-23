@@ -1,0 +1,81 @@
+<!-- 
+<div class="backdrop" [ngClass]="{ 'show': subject }"></div>
+
+
+<div class="sidebar" [ngClass]="{ 'open': subject }">
+  
+ 
+  <button class="close-btn" (click)="closeSidebar()">&#x2715;</button>
+  
+  <h2 *ngIf="subject">{{ subject.name }}</h2>
+
+  <p *ngIf="subject?.ects !== undefined">
+    <strong>ECTS:</strong> {{ subject?.ects }}
+  </p>
+
+  <p *ngIf="subject?.description">
+    {{ subject?.description }}
+  </p>
+
+  <p *ngIf="subject?.lecturer">
+    <strong>Prowadzący:</strong> {{ subject?.lecturer }}
+  </p>
+
+  <p *ngIf="subject?.exam_type">
+    <strong>Forma zaliczenia:</strong> {{ subject!.exam_type === 'exam' ? 'Egzamin' : 'Zaliczenie' }}
+  </p>
+
+
+  <div *ngIf="subject.contact_hours">
+    <p><strong>Godziny kontaktowe:</strong></p>
+    <ul>
+      <li><strong>Wykłady:</strong> {{ subject.contact_hours.lecture || 0 }} godz.</li>
+      <li><strong>Ćwiczenia:</strong> {{ subject.contact_hours.exercises || 0 }} godz.</li>
+      <li><strong>Laboratoria:</strong> {{ subject.contact_hours.labs || 0 }} godz.</li>
+      <li><strong>Seminaria:</strong> {{ subject.contact_hours.seminars || 0 }} godz.</li>
+    </ul>
+  </div>
+
+  <p><strong>Godziny niekontaktowe:</strong> {{ subject.non_contact_hours || 0 }} godz.</p>
+
+
+  <h3 *ngIf="subject?.files?.length">Materiały:</h3>
+  <ul *ngIf="subject?.files?.length">
+    <li *ngFor="let file of subject?.files">
+      <a [href]="file.url" target="_blank">{{ file.name }}</a>
+    </li>
+  </ul>
+</div> -->
+
+<div class="backdrop" [ngClass]="{ 'show': subject }"></div>
+
+
+<div class="sidebar" [ngClass]="{ 'open': subject }">
+
+  <button class="close-btn" (click)="closeSidebar()">&#x2715;</button>
+
+<div *ngIf="subject" class="subject-details">
+  <h2>{{ subject.name }}</h2>
+  <p>{{ subject.description || '' }}</p>
+  <p><strong>Wykładowca:</strong> {{ subject.lecturer || '' }}</p>
+  <p><strong>ECTS:</strong> {{ subject.ects || '0' }}</p>
+  <p><strong>Typ egzaminu:</strong> {{ subject.exam_type || '' }}</p>
+  <p><strong>Godziny kontaktowe:</strong> 
+    Wykład: {{ subject.contact_hours?.lecture || 0 }} | 
+    Ćwiczenia: {{ subject.contact_hours?.exercises || 0 }} | 
+    Laboratoria: {{ subject.contact_hours?.labs || 0 }} | 
+    Seminaria: {{ subject.contact_hours?.seminars || 0 }}
+  </p>
+  <p><strong>Godziny poza kontaktem:</strong> {{ subject.non_contact_hours || 0 }}</p>
+
+  <div *ngIf="subject.files?.length">
+    <h3>Pliki:</h3>
+    <ul>
+      <li *ngFor="let file of subject.files">
+        <a [href]="file.url" target="_blank">{{ file.name }}</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+

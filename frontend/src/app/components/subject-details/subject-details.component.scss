@@ -1,0 +1,88 @@
+/* Efekt przyciemnienia */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;  /* Zwiększamy czas animacji */
+  pointer-events: none;
+}
+
+/* Aktywacja tła */
+.backdrop.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* 🔹 Domyślnie (dla mobile: wysuwa się z dołu) */
+.sidebar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 66vh;
+  background: #fff;
+  box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px;
+  overflow-y: auto;
+
+  /* Ukrycie domyślnie */
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;  /* Zwiększenie czasu animacji */
+}
+
+/* Gdy modal otwarty */
+.sidebar.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Styl dla przycisku zamykania */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;  /* Płynne pojawianie przycisku */
+}
+
+.close-btn:hover {
+  transform: scale(1.1);  /* Zwiększenie przycisku po najechaniu */
+}
+
+/* 🔹 Na desktopie: wysuwa się z prawej */
+@media (min-width: 769px) {
+  .sidebar {
+    bottom: auto;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 350px;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
+
+    /* Domyślnie ukrycie na desktop */
+    transform: translateX(100%);
+  }
+
+  /* Gdy modal otwarty na desktopie */
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+/* Blokowanie przewijania */
+body.modal-open {
+  overflow: hidden;
+}
