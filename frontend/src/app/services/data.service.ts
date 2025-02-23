@@ -9,7 +9,7 @@ import { Semester, Module, Subject } from '../models/subject.model';
   providedIn: 'root',
 })
 export class DataService {
-  private yamlUrl = './subjects.yaml';  // Ścieżka do pliku YAML
+  private yamlUrl = './subjects.yaml'; 
 
   constructor(private http: HttpClient) {}
 
@@ -31,7 +31,6 @@ export class DataService {
                 lecturer: subject.lecturer || "Nieznany prowadzący",
                 ects: subject.ects || 0,
                 exam_type: subject.exam_type || "pass",
-                // Mapa godzin kontaktowych
                 contact_hours: subject.contact_hours
                   ? {
                       lecture: subject.contact_hours.lecture || 0,
@@ -45,7 +44,6 @@ export class DataService {
                       labs: 0,
                       seminars: 0,
                     },
-                // Sumowanie godzin kontaktowych
                 totalContactHours: subject.contact_hours
                   ? Object.values(subject.contact_hours).reduce((acc, val) => acc + val, 0)
                   : 0,

@@ -79,12 +79,12 @@
   color: #343434;
 
   &:hover {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); // Mocniejszy cień przy najechaniu
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); 
     color:white;
     background:#343434
   }
 
-  /* 🔽 Animacja pojawiania się */
+ 
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -108,7 +108,7 @@
 
   .timeline-item {
     max-width: 200px;
-    margin: 30px 0; /* Większy odstęp między modułami */
+    margin: 30px 0; 
   }
 
   .timeline-label {
@@ -117,8 +117,8 @@
   }
 
   .subjects-wrapper {
-    gap: 10px; /* Większy odstęp między przedmiotami */
-    margin-top: 20px; /* Większy odstęp od modułu */
+    gap: 10px; 
+    margin-top: 20px; 
   }
 
   .subjects-right,
@@ -135,14 +135,14 @@
     min-width: 140px;
     padding: 8px 12px;
     font-size: 14px;
-    margin: 5px 0; /* Większy odstęp między przedmiotami */
+    margin: 5px 0; 
   }
 }
 
 @media (max-width: 480px) {
   .timeline-item {
     max-width: 150px;
-    margin: 25px 0; /* Większy odstęp między modułami */
+    margin: 25px 0; 
   }
 
   .timeline-label {
@@ -151,175 +151,14 @@
   }
 
   .subjects-wrapper {
-    gap: 12px; /* Jeszcze większy odstęp między przedmiotami */
-    margin-top: 25px; /* Jeszcze większy odstęp od modułu */
+    gap: 12px; 
+    margin-top: 25px; 
   }
 
   .subject {
     min-width: 120px;
     padding: 6px 10px;
     font-size: 12px;
-    margin: 6px 0; /* Większy odstęp między przedmiotami */
+    margin: 6px 0; 
   }
 }
-
-
-
-/////
-// .timeline-container {
-//   position: relative;
-//   padding-bottom: 100px;
-// }
-
-// .vertical-timeline {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-// .timeline-line {
-//   position: absolute;
-//   width: 2px;
-//   background: #E3E3E3;
-//   top: 0;
-//   bottom: 0;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
-
-// .timeline-item {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   position: relative;
-//   margin: 30px 0;
-//   max-width: 270px;
-
-//   opacity: 0;
-//   transform: translateY(50px);
-//   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-// }
-
-// .timeline-item.visible {
-//   opacity: 1;
-//   transform: translateY(0);
-// }
-
-// .timeline-label {
-//   background: #4682b4;
-//   padding: 8px 12px;
-//   border: 1px solid #4682b4;
-//   border-radius: 5px;
-//   font-weight: normal;
-//   color: white;
-// }
-
-// .subjects-wrapper {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 10px;
-//   gap: 5px;
-// }
-
-// .subjects-right {
-//   left: calc(50% + 250px);
-//   align-items: flex-start;
-//   display: flex;
-// }
-
-// .subjects-left {
-//   right: calc(50% + 250px);
-//   align-items: flex-end;
-//   display: flex;
-// }
-
-// .subject {
-//   cursor: pointer;
-//   background: #161b22;
-//   padding: 8px 12px;
-//   border-radius: 5px;
-//   min-width: 180px;
-//   text-align: center;
-//   box-shadow: 0px 2px 12px 0px rgba(18, 18, 19, 0.0588); 
-//   color: white;
-
-//   &:hover {
-//     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); // Mocniejszy cień przy najechaniu
-//     color:white;
-//     background:#000000
-//   }
-
-//   /* 🔽 Animacja pojawiania się */
-//   opacity: 0;
-//   transform: translateY(30px);
-//   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-// }
-
-// .subject.visible {
-//   opacity: 1;
-//   transform: translateY(0);
-// }
-
-
-
-// @media (max-width: 768px) {
-//   .timeline-container {
-//     padding-bottom: 50px;
-//   }
-
-//   .timeline-line {
-//     width: 1px;
-//   }
-
-//   .timeline-item {
-//     max-width: 200px;
-//     margin: 20px 0;
-//   }
-
-//   .timeline-label {
-//     padding: 6px 10px;
-//     font-size: 14px;
-//   }
-
-//   .subjects-wrapper {
-//     gap: 3px;
-//   }
-
-//   .subjects-right,
-//   .subjects-left {
-//     position: static;
-//     align-items: center;
-//     justify-content: center;
-//     flex-direction: column;
-//     left: auto;
-//     right: auto;
-//   }
-
-//   .subject {
-//     min-width: 140px;
-//     padding: 6px 10px;
-//     font-size: 14px;
-//   }
-// }
-
-// @media (max-width: 480px) {
-//   .timeline-item {
-//     max-width: 150px;
-//     margin: 15px 0;
-//   }
-
-//   .timeline-label {
-//     font-size: 12px;
-//     padding: 5px 8px;
-//   }
-
-//   .subject {
-//     min-width: 120px;
-//     padding: 5px 8px;
-//     font-size: 12px;
-//   }
-// }
-
-

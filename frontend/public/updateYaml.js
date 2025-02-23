@@ -5,7 +5,7 @@ const yaml = require('js-yaml');
 const FILES_DIR = path.join(__dirname, 'files'); // Katalog z plikami
 const YAML_PATH = path.join(__dirname, 'subjects.yaml'); // Ścieżka do YAML
 
-// 1️⃣ Wczytaj pliki z katalogu
+
 function getFiles() {
     if (!fs.existsSync(FILES_DIR)) {
       console.error(`❌ Katalog nie istnieje: ${FILES_DIR}`);
@@ -17,18 +17,18 @@ function getFiles() {
   }
   
 
-// 2️⃣ Wczytaj i sparsuj YAML
+
 function loadYaml() {
   if (!fs.existsSync(YAML_PATH)) return null;
   return yaml.load(fs.readFileSync(YAML_PATH, 'utf8'));
 }
 
-// 3️⃣ Dopasuj pliki do przedmiotów na podstawie nazwy
+
 function matchFilesToSubjects(files, yamlData) {
-  const fileMap = {}; // Mapujemy pliki do przedmiotów
+  const fileMap = {}; 
 
   files.forEach(file => {
-    const match = file.match(/^(.+?)-.+?\..+$/); // Wyciągnij nazwę przedmiotu przed myślnikiem
+    const match = file.match(/^(.+?)-.+?\..+$/); 
     if (match) {
       const subjectName = match[1].trim();
       if (!fileMap[subjectName]) fileMap[subjectName] = [];
@@ -36,12 +36,12 @@ function matchFilesToSubjects(files, yamlData) {
     }
   });
 
-  // Przejdź przez semestry i przypisz pliki do przedmiotów
+  
   Object.values(yamlData.semesters).forEach(semester => {
     semester.modules.forEach(module => {
       module.subjects.forEach(subject => {
         if (fileMap[subject.name]) {
-          subject.files = fileMap[subject.name]; // Nadpisujemy listę plików
+          subject.files = fileMap[subject.name]; 
         }
       });
     });
@@ -50,7 +50,7 @@ function matchFilesToSubjects(files, yamlData) {
   return yamlData;
 }
 
-// 4️⃣ Zapisz YAML z powrotem do pliku
+
 function saveYaml(yamlData) {
     if (!yamlData) {
       console.error('❌ Błąd: yamlData jest null lub undefined!');
@@ -72,7 +72,7 @@ function saveYaml(yamlData) {
   }
   
 
-// 🔥 Uruchom aktualizację
+
 function updateYaml() {
   console.log('📂 Odczytuję pliki...');
   const files = getFiles();
@@ -93,5 +93,5 @@ function updateYaml() {
   console.log('✅ Gotowe! Pliki zostały przypisane do przedmiotów.');
 }
 
-// 🚀 Start
+
 updateYaml();
