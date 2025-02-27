@@ -1,4 +1,4 @@
-// src/app/app.component.ts
+
 import { Component } from '@angular/core';
 import { Subject, Semester } from './models/model.model';
 import { DataService } from './services/data.service';
@@ -25,15 +25,11 @@ export class AppComponent {
   constructor(private dataService: DataService, private cdRef: ChangeDetectorRef) {}
 
   ngOnInit() {
-    // Pobieranie tytułu i podtytułu
     this.dataService.getAppConfig().subscribe((config) => {
-      console.log('Załadowana konfiguracja:', config);
       this.appConfig = config;
     });
   
-    // Pobieranie semestrów
     this.dataService.getSemesters().subscribe((data) => {
-      console.log('Załadowane dane semestrów:', data);
       this.semesters = data;
       this.selectedSemester = 0;
     });
@@ -54,8 +50,6 @@ export class AppComponent {
   onSemesterClick(semesterIndex: number) {
     this.selectedSemester = semesterIndex;
     this.selectedSubject = null;
-    console.log('Wybrany semestr:', semesterIndex);
-    console.log('Moduły semestru:', this.semesters[semesterIndex]?.modules);
   }
 
   
