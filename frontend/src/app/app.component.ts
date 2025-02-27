@@ -1,11 +1,12 @@
 // src/app/app.component.ts
 import { Component } from '@angular/core';
-import { Subject, Semester } from './models/subject.model';
+import { Subject, Semester } from './models/model.model';
 import { DataService } from './services/data.service';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { SubjectDetailsComponent } from './components/subject-details/subject-details.component';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectorRef } from '@angular/core';
+import { AppConfig } from './models/model.model';
 
 @Component({
   selector: 'app-root',
@@ -19,25 +20,35 @@ export class AppComponent {
   selectedSubject: Subject | null = null;
   selectedSemester: number | null = null;  
   hoveredSemester: number | null = null;
+  appConfig: AppConfig = { title: '', subtitle: '' };
 
   constructor(private dataService: DataService, private cdRef: ChangeDetectorRef) {}
 
   ngOnInit() {
+    // Pobieranie tytułu i podtytułu
+    this.dataService.getAppConfig().subscribe((config) => {
+      console.log('Załadowana konfiguracja:', config);
+      this.appConfig = config;
+    });
+  
+    // Pobieranie semestrów
     this.dataService.getSemesters().subscribe((data) => {
-      console.log('Załadowane dane semestrów:', data); 
+      console.log('Załadowane dane semestrów:', data);
       this.semesters = data;
       this.selectedSemester = 0;
     });
   }
+  
 
   onSubjectSelected(subject: Subject) {
-    if (this.selectedSubject === subject) {
       this.selectedSubject = null; 
-    } else {
-      this.selectedSubject = subject;
-    }
-
-    this.cdRef.detectChanges();
+      this.cdRef.detectChanges();
+    
+      setTimeout(() => {
+        this.selectedSubject = subject;
+        this.cdRef.detectChanges();
+      }, 0);
+    
   }
 
   onSemesterClick(semesterIndex: number) {
@@ -59,4 +70,7 @@ export class AppComponent {
   onMouseLeave() {
     this.hoveredSemester = null;
   }
+
+
+  
 }

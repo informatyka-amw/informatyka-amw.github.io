@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
 import * as yaml from 'js-yaml';
-import { Semester, Module, Subject } from '../models/subject.model';
+import { Semester, Module, Subject, AppConfig } from '../models/model.model';
 
 @Injectable({
   providedIn: 'root',
@@ -12,6 +12,18 @@ export class DataService {
   private yamlUrl = './subjects.yaml'; 
 
   constructor(private http: HttpClient) {}
+
+  getAppConfig(): Observable<AppConfig> {
+    return this.http.get(this.yamlUrl, { responseType: 'text' }).pipe(
+      map((yamlText) => {
+        const parsedData = yaml.load(yamlText) as { title: string; subtitle: string };
+        return {
+          title: parsedData.title || "Domyślny Tytuł",
+          subtitle: parsedData.subtitle || "Domyślny Podtytuł",
+        };
+      })
+    );
+  }
 
   getSemesters(): Observable<Semester[]> {
     return this.http.get(this.yamlUrl, { responseType: 'text' }).pipe(
