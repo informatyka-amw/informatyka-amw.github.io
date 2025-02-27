@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter, AfterViewInit, ElementRef, ViewChild, HostListener, OnChanges } from '@angular/core';
-import { Module, Subject } from '../../models/subject.model';
+import { Module, Subject } from '../../models/model.model';
 import { CommonModule } from '@angular/common';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatButtonModule } from '@angular/material/button';

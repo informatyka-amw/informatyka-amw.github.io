@@ -3,7 +3,7 @@ const path = require('path');
 const yaml = require('js-yaml');
 
 const FILES_DIR = path.join(__dirname, 'files'); // Katalog z plikami
-const YAML_PATH = path.join(__dirname, 'subjects.yaml'); // Ścieżka do YAML
+const YAML_PATH = path.join(__dirname, './assets/subject.yaml'); // Ścieżka do YAML
 
 
 function getFiles() {

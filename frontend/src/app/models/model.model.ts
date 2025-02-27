@@ -1,3 +1,8 @@
+export interface AppConfig {
+  title: string;
+  subtitle: string;
+}
+
 export interface Subject {
   name: string;
   description?: string;

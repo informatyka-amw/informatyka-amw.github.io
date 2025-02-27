@@ -1,6 +1,6 @@
 // src/app/subject-details/subject-details.component.ts
 import { Component, Input, OnChanges, SimpleChanges} from '@angular/core';
-import { Subject } from '../../models/subject.model';
+import { Subject } from '../../models/model.model';
 import { CommonModule } from '@angular/common';
 
 @Component({
