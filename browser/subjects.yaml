@@ -1,0 +1,775 @@
+title: Informatyka
+subtitle: Roadmapa studiów
+
+semesters:
+  '1':
+    modules:
+      - name: Moduł Ogólnouczelniany
+        subjects:
+          - name: J. Angielski
+            description: Podstawowy kurs języka angielskiego na poziomie B1.
+            lecturer: dr Anna Kowalska
+            ects: 2
+            exam_type: zaliczenie
+            contact_hours:
+              exercises: 30
+            non_contact_hours: 20
+            files: []
+          - name: WF
+            description: Zajęcia z wychowania fizycznego, poprawiające kondycję i zdrowie.
+            lecturer: mgr Jan Nowak
+            ects: 1
+            exam_type: zaliczenie
+            contact_hours:
+              exercises: 30
+            non_contact_hours: 10
+            files: []
+          - name: Przedsiębiorczość
+            description: Podstawy prowadzenia działalności gospodarczej.
+            lecturer: dr hab. Marek Wiśniewski
+            ects: 3
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 15
+              exercises: 15
+            non_contact_hours: 30
+            files: []
+      - name: Moduł Matematyczno-Fizyczny
+        subjects:
+          - name: Matematyka
+            description: Podstawowe pojęcia analizy matematycznej.
+            lecturer: dr inż. Piotr Zieliński
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              exercises: 30
+            non_contact_hours: 50
+            files:
+              - name: Matematyka-notatki.pdf
+                url: /files/Matematyka-notatki.pdf
+              - name: link
+                url: https://www.wme.amw.gdynia.pl/karty-przedmiotow/informatyka/  
+          - name: Fizyka
+            description: Mechanika klasyczna i podstawy elektrodynamiki.
+            lecturer: prof. Stanisław Nowicki
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              exercises: 15
+              labs: 15
+            non_contact_hours: 40
+            files: []
+          - name: Podstawy Elektroniki
+            description: Wprowadzenie do elektroniki analogowej i cyfrowej.
+            lecturer: dr inż. Tomasz Kwiatkowski
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 30
+            files: []
+      - name: Moduł Kierunkowy
+        subjects:
+          - name: Podstawy Informatyki
+            description: Wprowadzenie do systemów komputerowych i algorytmów.
+            lecturer: dr Adam Malinowski
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              exercises: 15
+              labs: 15
+            non_contact_hours: 30
+            files: []
+          - name: Podstawy Programowania
+            description: Podstawy programowania w językach wysokiego poziomu.
+            lecturer: dr Ewa Kamińska
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 45
+            non_contact_hours: 50
+            files: []
+  '2':
+    modules:
+      - name: Moduł Ogólnouczelniany
+        subjects:
+          - name: J. Angielski
+            ects: 2
+            contact_hours:
+              exercises: 30
+            non_contact_hours: 20
+            files: []
+          - name: WF
+            ects: 1
+            contact_hours:
+              exercises: 30
+            non_contact_hours: 10
+            files: []
+          - name: Grupa zajęć do wyboru
+            options:
+              - name: Podstawy Ekonomii
+                description: Wprowadzenie do mikroekonomii i makroekonomii.
+                ects: 3
+                exam_type: zaliczenie
+                contact_hours:
+                  lecture: 15
+                  exercises: 15
+                non_contact_hours: 30
+                files: []
+              - name: Podstawy Prawa
+                description: Zasady systemu prawnego i prawa cywilnego.
+                ects: 3
+                exam_type: zaliczenie
+                contact_hours:
+                  lecture: 15
+                  exercises: 15
+                non_contact_hours: 30
+                files: []
+      - name: Moduł Matematyczno-Fizyczny
+        subjects:
+          - name: Matematyka Dyskretna
+            description: Struktury dyskretne w informatyce.
+            lecturer: dr inż. Robert Nowak
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              exercises: 30
+            non_contact_hours: 40
+            files: []
+          - name: Podstawy Automatyki
+            description: Wprowadzenie do teorii sterowania.
+            lecturer: dr hab. Tomasz Zieliński
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              exercises: 15
+            non_contact_hours: 25
+            files: []
+          - name: Podstawy Elektroniki
+            description: Kontynuacja zagadnień z elektroniki.
+            lecturer: dr inż. Tomasz Kwiatkowski
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 30
+            files: []
+      - name: Moduł Kierunkowy
+        subjects:
+          - name: Grafika Komputerowa
+            description: Podstawy grafiki komputerowej 2D i 3D.
+            lecturer: dr Ewa Majewska
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              exercises: 30
+            non_contact_hours: 40
+            files: []
+          - name: Programowanie Obiektowe
+            description: Programowanie w paradygmacie obiektowym.
+            lecturer: dr Andrzej Lisowski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 45
+            non_contact_hours: 50
+            files: []
+          - name: Algorytmy i Struktury Danych
+            description: Zaawansowane techniki algorytmiczne.
+            lecturer: dr Andrzej Lewandowski
+            ects: 6
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              exercises: 30
+              labs: 30
+            non_contact_hours: 60
+            files: []
+  '3':
+    modules:
+      - name: Moduł Ogólnouczelniany
+        subjects:
+          - name: J. Angielski
+            ects: 2
+            contact_hours:
+              exercises: 30
+            non_contact_hours: 20
+            files: []
+          - name: Grupa zajęć do wyboru
+            options:
+              - name: Podstawy Bezpieczeństwa Narodowego
+                description: Wprowadzenie do zagadnień bezpieczeństwa państwa.
+                ects: 3
+                exam_type: zaliczenie
+                contact_hours:
+                  lecture: 15
+                  exercises: 15
+                non_contact_hours: 30
+                files: []
+              - name: Podstawy Zarządzania i Organizacji
+                description: Zarządzanie zespołami i organizacją.
+                ects: 3
+                exam_type: zaliczenie
+                contact_hours:
+                  lecture: 15
+                  exercises: 15
+                non_contact_hours: 30
+                files: []
+      - name: Moduł Matematyczno-Fizyczny
+        subjects:
+          - name: Probabilistyka i Statystyka
+            description: Podstawy rachunku prawdopodobieństwa i statystyki.
+            lecturer: dr hab. Marek Lewandowski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              exercises: 30
+            non_contact_hours: 40
+            files: []
+          - name: Układy Cyfrowe
+            description: Projektowanie i analiza układów cyfrowych.
+            lecturer: dr inż. Tomasz Kwiatkowski
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 30
+            files: []
+      - name: Moduł Kierunkowy
+        subjects:
+          - name: Metody Podejmowania Decyzji
+            description: Algorytmy wspierające podejmowanie decyzji.
+            lecturer: dr Anna Majewska
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              exercises: 30
+            non_contact_hours: 40
+            files: []
+          - name: Sieci Komputerowe
+            description: Podstawy budowy i konfiguracji sieci komputerowych.
+            lecturer: dr Andrzej Kowalski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 45
+            non_contact_hours: 50
+            files: []
+          - name: Systemy Wbudowane
+            description: Architektura i programowanie systemów wbudowanych.
+            lecturer: dr inż. Robert Nowak
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 45
+            non_contact_hours: 50
+            files: []
+          - name: Sztuczna Inteligencja
+            description: Podstawy AI i uczenia maszynowego.
+            lecturer: dr hab. Krzysztof Wiśniewski
+            ects: 6
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 60
+            files: []
+          - name: Projektowanie Interfejsu Użytkownika
+            description: Zasady projektowania UI i UX.
+            lecturer: dr inż. Marta Wójcik
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              exercises: 30
+            non_contact_hours: 40
+            files: []
+  '4':
+    modules:
+      - name: Moduł Ogólnouczelniany
+        subjects:
+          - name: J. Angielski
+            ects: 2
+            contact_hours:
+              exercises: 30
+            non_contact_hours: 20
+            files: []
+      - name: Moduł Matematyczno-Fizyczny
+        subjects:
+          - name: Metody Numeryczne
+            description: Techniki obliczeniowe i algorytmy numeryczne.
+            lecturer: dr hab. Piotr Szymański
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              exercises: 30
+            non_contact_hours: 40
+            files: []
+      - name: Moduł Kierunkowy
+        subjects:
+          - name: Inżynieria Oprogramowania
+            description: Metodyki wytwarzania oprogramowania.
+            lecturer: dr Anna Majewska
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              exercises: 30
+            non_contact_hours: 50
+            files: []
+          - name: Architektura Systemów Komputerowych
+            description: Analiza architektury komputerów i mikroprocesorów.
+            lecturer: dr Andrzej Lisowski
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 30
+            files: []
+          - name: Sieci Bezprzewodowe
+            description: Standardy i technologie sieci bezprzewodowych.
+            lecturer: dr inż. Robert Nowak
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 30
+            files: []
+          - name: Kryptografia
+            description: Algorytmy kryptograficzne i bezpieczeństwo danych.
+            lecturer: dr hab. Krzysztof Wiśniewski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Podstawy Przetwarzania Sygnałów
+            description: Metody analizy i przetwarzania sygnałów.
+            lecturer: dr inż. Tomasz Kwiatkowski
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              exercises: 30
+            non_contact_hours: 40
+            files: []
+  '5':
+    modules:
+      - name: Moduł Ogólnouczelniany
+        subjects:
+          - name: J. Angielski
+            ects: 2
+            contact_hours:
+              exercises: 30
+            non_contact_hours: 20
+            files: []
+      - name: Moduł Kierunkowy
+        subjects:
+          - name: Zarządzanie Projektami Informatycznymi
+            description: Metody i narzędzia zarządzania projektami IT.
+            lecturer: dr Anna Majewska
+            ects: 5
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              exercises: 30
+            non_contact_hours: 50
+            files: []
+          - name: Systemy Operacyjne
+            description: Budowa, funkcjonowanie i administracja systemów operacyjnych.
+            lecturer: dr Andrzej Kowalski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 45
+            non_contact_hours: 50
+            files: []
+          - name: Bazy Danych
+            description: Modelowanie, implementacja i optymalizacja baz danych.
+            lecturer: dr inż. Tomasz Kwiatkowski
+            ects: 6
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 45
+            non_contact_hours: 60
+            files: []
+      - name: Moduł Specjalności - Sieci
+        subjects:
+          - name: Protokoły Sieci Teleinformatycznych
+            description: Protokoły komunikacyjne w sieciach komputerowych.
+            lecturer: dr inż. Robert Nowak
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 40
+            files: []
+          - name: Technologie Routingu i Switchingu
+            description: Konfiguracja sieci z wykorzystaniem technologii routingu i switchingu.
+            lecturer: dr hab. Marek Lewandowski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+      - name: Moduł Specjalności - Aplikacje
+        subjects:
+          - name: Technologie Internetowe
+            description: Tworzenie aplikacji webowych i technologie frontendowe.
+            lecturer: dr inż. Marta Wójcik
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Programowanie Gier
+            description: Podstawy projektowania i implementacji gier komputerowych.
+            lecturer: dr Krzysztof Wiśniewski
+            ects: 5
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 45
+            non_contact_hours: 50
+            files: []
+      - name: Moduł Specjalności - Inteligentne Systemy w Bezpieczeństwie IT
+        subjects:
+          - name: Prawne Aspekty Ochrony Informacji
+            description: Przepisy prawne dotyczące ochrony danych i cyberbezpieczeństwa.
+            lecturer: dr hab. Anna Lisowska
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              exercises: 15
+            non_contact_hours: 40
+            files: []
+          - name: Bezpieczeństwo Systemów Przechowywania Danych
+            description: Ochrona i zarządzanie danymi w systemach IT.
+            lecturer: dr inż. Tomasz Kwiatkowski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Hardening Systemów Komputerowych
+            description: Techniki zabezpieczania systemów operacyjnych i aplikacji.
+            lecturer: dr Andrzej Kowalski
+            ects: 5
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+  '6':
+    modules:
+      - name: Moduł Ogólnouczelniany
+        subjects:
+          - name: Angielski Zawodowy
+            description: Język angielski w kontekście technicznym i biznesowym.
+            lecturer: dr Anna Majewska
+            ects: 2
+            exam_type: zaliczenie
+            contact_hours:
+              exercises: 30
+            non_contact_hours: 20
+            files: []
+          - name: Ochrona Własności Intelektualnej
+            description: Prawo autorskie i ochrona własności intelektualnej w IT.
+            lecturer: dr hab. Marek Wiśniewski
+            ects: 2
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 15
+              exercises: 15
+            non_contact_hours: 30
+            files: []
+      - name: Moduł Kierunkowy
+        subjects:
+          - name: Widzenie Komputerowe
+            description: Techniki analizy i przetwarzania obrazu w systemach IT.
+            lecturer: dr inż. Tomasz Kwiatkowski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+      - name: Moduł Specjalności - Sieci
+        subjects:
+          - name: Usługi Katalogowe
+            description: Zarządzanie usługami katalogowymi i autoryzacja użytkowników.
+            lecturer: dr inż. Robert Nowak
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 40
+            files: []
+          - name: Technologia Sieci Rozległych
+            description: Zaawansowane technologie sieci WAN i protokoły komunikacyjne.
+            lecturer: dr hab. Marek Lewandowski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Projektowanie Infrastruktury Sieci
+            description: Planowanie i wdrażanie architektury sieciowej w przedsiębiorstwach.
+            lecturer: dr inż. Paweł Wójcik
+            ects: 5
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+      - name: Moduł Specjalności - Aplikacje
+        subjects:
+          - name: Administrowanie Bazami Danych
+            description: Zarządzanie, optymalizacja i bezpieczeństwo baz danych.
+            lecturer: dr Krzysztof Wiśniewski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Aplikacje Mobilne
+            description: Projektowanie i implementacja aplikacji na platformy mobilne.
+            lecturer: dr inż. Marta Wójcik
+            ects: 5
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Aplikacje Internetowe
+            description: Tworzenie zaawansowanych aplikacji webowych.
+            lecturer: dr Adam Malinowski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+      - name: Moduł Specjalności - Inteligentne Systemy w Bezpieczeństwie IT
+        subjects:
+          - name: Monitorowanie i Diagnozowanie Sieci Komputerowych
+            description: Analiza ruchu sieciowego i narzędzia diagnostyczne.
+            lecturer: dr hab. Anna Lisowska
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 40
+            files: []
+          - name: Etyczny Hacking Systemów Komputerowych
+            description: Metody testów penetracyjnych i wykrywania podatności.
+            lecturer: dr Andrzej Kowalski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Informatyka Śledcza
+            description: Metody analizy śledczej w cyberbezpieczeństwie.
+            lecturer: dr inż. Tomasz Kwiatkowski
+            ects: 5
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+      - name: Moduł Praktyk
+        subjects:
+          - name: Praktyki Zawodowe
+            description: Zdobycie doświadczenia praktycznego w firmach IT.
+            ects: 10
+            exam_type: zaliczenie
+            contact_hours:
+              internships: 160
+            non_contact_hours: 100
+            files: []
+      - name: Moduł Dyplomowy
+        subjects:
+          - name: Przygotowanie Pracy Dyplomowej
+            description: Opracowanie projektu dyplomowego pod kierunkiem promotora.
+            ects: 10
+            exam_type: zaliczenie
+            contact_hours:
+              seminars: 30
+            non_contact_hours: 120
+            files: []
+  '7':
+    modules:
+      - name: Moduł Kierunkowy
+        subjects:
+          - name: Wyrażenia Regularne
+            description: Składnia i zastosowanie wyrażeń regularnych w analizie danych.
+            lecturer: dr inż. Piotr Zieliński
+            ects: 4
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              exercises: 30
+            non_contact_hours: 40
+            files: []
+      - name: Moduł Specjalności - Sieci
+        subjects:
+          - name: Administrowanie Serwerami
+            description: Zarządzanie serwerami Linux i Windows Server.
+            lecturer: dr inż. Robert Nowak
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Zarządzanie Sieciami Komputerowymi
+            description: Monitorowanie, konfiguracja i utrzymanie sieci firmowych.
+            lecturer: dr hab. Marek Lewandowski
+            ects: 5
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Bezpieczeństwo Sieci
+            description: Mechanizmy ochrony sieci i analiza zagrożeń.
+            lecturer: dr inż. Tomasz Kwiatkowski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+      - name: Moduł Specjalności - Aplikacje
+        subjects:
+          - name: Integracja Systemów Informatycznych
+            description: Technologie integracyjne i wymiana danych między systemami.
+            lecturer: dr Adam Malinowski
+            ects: 5
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Bezpieczeństwo Aplikacji Internetowych
+            description: Testowanie i wzmacnianie zabezpieczeń aplikacji webowych.
+            lecturer: dr Krzysztof Wiśniewski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Metody Eksploracji Danych
+            description: Techniki analizy danych i uczenia maszynowego.
+            lecturer: dr inż. Marta Wójcik
+            ects: 5
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+      - name: Moduł Specjalności - Inteligentne Systemy w Bezpieczeństwie IT
+        subjects:
+          - name: Podstawy Data Science
+            description: Analiza i przetwarzanie danych z wykorzystaniem narzędzi data science.
+            lecturer: dr hab. Anna Lisowska
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Analiza Statyczna i Dynamiczna Złośliwego Oprogramowania
+            description: Techniki wykrywania i analizy malware.
+            lecturer: dr Andrzej Kowalski
+            ects: 5
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Inteligentne Metody Weryfikacji Tożsamości
+            description: Biometryczne metody identyfikacji użytkowników.
+            lecturer: dr inż. Tomasz Kwiatkowski
+            ects: 5
+            exam_type: egzamin
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+          - name: Techniki AI w Rozpoznawaniu i Klasyfikacji Tekstu
+            description: Wykorzystanie sztucznej inteligencji w analizie tekstu.
+            lecturer: dr Ewa Majewska
+            ects: 5
+            exam_type: zaliczenie
+            contact_hours:
+              lecture: 30
+              labs: 30
+            non_contact_hours: 50
+            files: []
+      - name: Moduł Dyplomowy
+        subjects:
+          - name: Praca Dyplomowa
+            description: Ostateczne przygotowanie i obrona pracy dyplomowej.
+            lecturer: Promotor wyznaczony przez uczelnię
+            ects: 15
+            exam_type: obrona
+            contact_hours:
+              seminars: 30
+            non_contact_hours: 150
+            files: []
