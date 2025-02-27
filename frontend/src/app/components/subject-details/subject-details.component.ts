@@ -1,4 +1,4 @@
-// src/app/subject-details/subject-details.component.ts
+
 import { Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 import { Subject } from '../../models/model.model';
 import { CommonModule } from '@angular/common';
@@ -16,7 +16,6 @@ export class SubjectDetailsComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['subject'] && changes['subject'].currentValue) {
-      console.log("Załadowano przedmiot:", this.subject);
     }
 
   }
