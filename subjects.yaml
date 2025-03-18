@@ -74,7 +74,7 @@ semesters:
       - name: Moduł Kierunkowy
         subjects:
           - name: Podstawy Informatyki
-            description: Wprowadzenie do systemów komputerowych i algorytmów.
+            description: Wprowadzenie do systemów komputerowych i algorytmów. Programy tworzone w językach Java i Python z wykorzystaniem wielowątkowości.
             lecturer: dr Adam Malinowski
             ects: 4
             exam_type: zaliczenie
